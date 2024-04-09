@@ -42,7 +42,8 @@ button,
 label,
 option,
 select,
-input {
+input,
+textarea {
   font-size: var(--small-text-size);
   outline: none;
 }
@@ -127,7 +128,7 @@ header select {
 footer {
   position: absolute;
   bottom: 0;
-  width: calc(100% - 8rem);
+  width: calc(100% - 9rem);
   left: 0;
   justify-content: end;
   align-items: center;
@@ -188,7 +189,8 @@ main .gray-bar img {
 }
 
 main .product,
-main .path {
+main .path,
+main .title {
   border: 0.1rem solid #aaaaaa75;
 }
 
@@ -238,7 +240,8 @@ main .path .container select {
   width: 30%;
 }
 
-main .path .container .input-box {
+main .path .container .input-box,
+main .title .container .input-box {
   gap: 1rem;
 }
 
@@ -250,7 +253,41 @@ main .path .container #path {
   padding-inline: 0.5rem;
 }
 
-main .path span {
+main .path span,
+main .title span {
   color: #f00;
   font-size: var(--regular-text-size);
+}
+
+main .title .input-box:last-child span {
+  transform: translateX(-4rem);
+}
+
+main .title #title {
+  width: 95%;
+  padding: 0 0.5rem;
+  border: 0.2rem solid #00000015;
+}
+
+main .title textarea {
+  width: 95%;
+  height: 10rem;
+  resize: none;
+}
+
+main .title textarea {
+  padding: 0.5rem;
+  border: 0.2rem solid #00000015;
+}
+
+main .title .container {
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+samp {
+  font-size: 1.3rem;
+  width: 100%;
+  color: #777;
 }
