@@ -1,1 +1,1 @@
-netlify: https://helpdesk.netlify.app
+netlify: https://helpdesksenai.netlify.app

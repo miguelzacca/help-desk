@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://helpdesk.netlify.app
+Sitemap: https://helpdesksenai.netlify.app/sitemap.xml
