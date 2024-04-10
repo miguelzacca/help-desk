@@ -12,6 +12,7 @@
     />
     <title>Help Desk | Service center</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="flex col">
@@ -39,97 +40,114 @@
         <img src="./assets/img/profile-icon.webp" alt="Profile icon" />
       </div>
     </header>
-    <main class="flex col">
-      <div class="flex call">
-        <h3>Chamado: <strong>3789126</strong></h3>
-      </div>
-      <div class="flex col product">
-        <div class="gray-bar flex">
-          <img src="./assets/img/table-icon.webp" alt="Table icon" />
-          <h3>Product/Process/Module</h3>
-        </div>
-        <div class="flex center container">
-          <div class="flex center input-box">
-            <label for="product">Product:</label>
-            <select name="Product" id="product" required>
-              <option value="">Select a product</option>
-            </select>
+    <main>
+      <form action="/" method="POST">
+        <div class="flex col main-container">
+          <div class="flex call">
+            <h3>Chamado: <strong>3789126</strong></h3>
           </div>
-          <div class="flex center input-box">
-            <label for="process">Process:</label>
-            <select name="Process" id="process" required>
-              <option value="">Select a process</option>
-            </select>
-          </div>
-          <div class="flex center input-box">
-            <label for="module">Module:</label>
-            <select name="Module" id="module" required>
-              <option value="">Select a module</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="flex col path">
-        <div class="gray-bar flex">
-          <img src="./assets/img/table-icon.webp" alt="Table icon" />
-          <h3>Path/Nature/Severity/Expiration/Version</h3>
-        </div>
-        <div class="flex col container">
-          <div class="flex input-box">
-            <label for="path">Path:</label>
-            <input type="search" id="path" placeholder="Select path" required />
-            <span>*</span>
-          </div>
-          <div class="flex input-box">
-            <label for="nature">Nature:</label>
-            <select name="Nature" id="nature" required>
-              <option value="">Select nature</option>
-            </select>
-            <span>*</span>
-          </div>
-          <div class="flex input-box">
-            <label for="version">Source version:</label>
-            <select name="Version" id="version" required>
-              <option value="">Select version</option>
-            </select>
-            <span>*</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex col title">
-        <div class="gray-bar flex">
-          <img src="./assets/img/table-icon.webp" alt="Table icon" />
-          <h3>Title/Descripition</h3>
-        </div>
-        <div class="flex col container">
-          <div class="flex input-box">
-            <label for="title">Title:</label>
-            <input type="text" id="title" required />
-            <span>*</span>
-          </div>
-          <div class="flex input-box">
-            <label for="title">Descripition:</label>
-            <div class="flex col">
-              <textarea
-                name="Descripition"
-                id="description"
-                required
-              ></textarea>
-              <samp>
-                To facilitate subsequent work, register a Call for each request
-              </samp>
+          <div class="flex col product">
+            <div class="gray-bar flex">
+              <img src="./assets/img/table-icon.webp" alt="Table icon" />
+              <h3>Product/Process/Module</h3>
             </div>
-            <span>*</span>
+            <div class="flex center container">
+              <div class="flex center input-box">
+                <label for="product">Product:</label>
+                <select name="Product" id="product" required>
+                  <option value="">Select a product</option>
+                  <option value="option1">Option 1</option>
+                </select>
+              </div>
+              <div class="flex center input-box">
+                <label for="process">Process:</label>
+                <select name="Process" id="process" required>
+                  <option value="">Select a process</option>
+                  <option value="option1">Option 1</option>
+                </select>
+              </div>
+              <div class="flex center input-box">
+                <label for="module">Module:</label>
+                <select name="Module" id="module" required>
+                  <option value="">Select a module</option>
+                  <option value="option1">Option 1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="flex col path">
+            <div class="gray-bar flex">
+              <img src="./assets/img/table-icon.webp" alt="Table icon" />
+              <h3>Path/Nature/Severity/Expiration/Version</h3>
+            </div>
+            <div class="flex col container">
+              <div class="flex input-box">
+                <label for="path">Path:</label>
+                <input
+                  type="search"
+                  id="path"
+                  placeholder="Select path"
+                  required
+                />
+                <span>*</span>
+              </div>
+              <div class="flex input-box">
+                <label for="nature">Nature:</label>
+                <select name="Nature" id="nature" required>
+                  <option value="">Select nature</option>
+                  <option value="option1">Option 1</option>
+                </select>
+                <span>*</span>
+              </div>
+              <div class="flex input-box">
+                <label for="version">Source version:</label>
+                <select name="Version" id="version" required>
+                  <option value="">Select version</option>
+                  <option value="option1">Option 1</option>
+                </select>
+                <span>*</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex col title">
+            <div class="gray-bar flex">
+              <img src="./assets/img/table-icon.webp" alt="Table icon" />
+              <h3>Title/Descripition</h3>
+            </div>
+            <div class="flex col container">
+              <div class="flex input-box">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required />
+                <span>*</span>
+              </div>
+              <div class="flex input-box">
+                <label for="title">Descripition:</label>
+                <div class="flex col">
+                  <textarea
+                    name="Descripition"
+                    id="description"
+                    required
+                  ></textarea>
+                  <samp>
+                    To facilitate subsequent work, register a Call for each
+                    request
+                  </samp>
+                </div>
+                <span>*</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <button type="submit" id="submitBtn"></button>
+        <button type="reset" id="resetBtn"></button>
+      </form>
     </main>
     <footer class="flex">
-      <button class="flex center">
+      <button id="confirmBtn" class="flex center">
         <img src="./assets/img/check-icon.webp" alt="Confirm icon" />
         Confirm
       </button>
-      <button class="flex center">
+      <button id="cancelBtn" class="flex center">
         <img src="./assets/img/cancel-icon.webp" alt="Cancel icon" />
         Cancel
       </button>

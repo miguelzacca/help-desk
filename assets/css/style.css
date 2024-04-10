@@ -155,7 +155,7 @@ footer button img {
   aspect-ratio: 1;
 }
 
-main {
+.main-container {
   padding: 1rem 0;
   width: 100%;
   height: calc(100% - var(--bar-height) * 3.5 - 2rem);
@@ -164,71 +164,76 @@ main {
   gap: 1rem;
 }
 
-main div {
+#submitBtn,
+#resetBtn {
+  display: none;
+}
+
+.main-container div {
   width: 95%;
 }
 
-main .call {
+.main-container .call {
   border: 0.1rem solid #aaaaaa75;
   padding: 0.1rem 1rem;
   width: calc(95% - 2rem);
 }
 
-main .call h3 {
+.main-container .call h3 {
   font-size: var(--small-text-size);
 }
 
-main .gray-bar {
+.main-container .gray-bar {
   gap: 1rem;
 }
 
-main .gray-bar img {
+.main-container .gray-bar img {
   width: 1.5rem;
   height: 1.5rem;
   padding-left: 1rem;
 }
 
-main .product,
-main .path,
-main .title {
+.main-container .product,
+.main-container .path,
+.main-container .title {
   border: 0.1rem solid #aaaaaa75;
 }
 
-main .gray-bar {
+.main-container .gray-bar {
   width: 100%;
   height: var(--bar-height);
   background-image: linear-gradient(to top, #ccc, #eee);
   align-items: center;
 }
 
-main .product h3 {
+.main-container .product h3 {
   font-size: var(--small-text-size);
 }
 
-main .gray-bar *:nth-child(2)::before,
-main .product .input-box::after {
+.main-container .gray-bar *:nth-child(2)::before,
+.main-container .product .input-box::after {
   content: "*";
   color: #f00;
   font-size: var(--regular-text-size);
   margin-right: 1rem;
 }
 
-main .product .input-box {
+.main-container .product .input-box {
   gap: 1rem;
 }
 
-main .product .container {
+.main-container .product .container {
   padding: 1rem 0;
 }
 
-main select {
+.main-container select {
   color: #444;
   border: 0.2rem solid #00000015;
   width: 20rem;
   background-color: rgb(245, 245, 245);
 }
 
-main .path .container {
+.main-container .path .container {
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -236,16 +241,16 @@ main .path .container {
   width: 100%;
 }
 
-main .path .container select {
+.main-container .path .container select {
   width: 30%;
 }
 
-main .path .container .input-box,
-main .title .container .input-box {
+.main-container .path .container .input-box,
+.main-container .title .container .input-box {
   gap: 1rem;
 }
 
-main .path .container #path {
+.main-container .path .container #path {
   width: 95%;
   border: 0.2rem solid #00000015;
   background-color: rgb(245, 245, 245);
@@ -253,34 +258,34 @@ main .path .container #path {
   padding-inline: 0.5rem;
 }
 
-main .path span,
-main .title span {
+.main-container .path span,
+.main-container .title span {
   color: #f00;
   font-size: var(--regular-text-size);
 }
 
-main .title .input-box:last-child span {
+.main-container .title .input-box:last-child span {
   transform: translateX(-4rem);
 }
 
-main .title #title {
+.main-container .title #title {
   width: 95%;
   padding: 0 0.5rem;
   border: 0.2rem solid #00000015;
 }
 
-main .title textarea {
+.main-container .title textarea {
   width: 95%;
   height: 10rem;
   resize: none;
 }
 
-main .title textarea {
+.main-container .title textarea {
   padding: 0.5rem;
   border: 0.2rem solid #00000015;
 }
 
-main .title .container {
+.main-container .title .container {
   align-items: center;
   gap: 1rem;
   padding: 1rem 0;
